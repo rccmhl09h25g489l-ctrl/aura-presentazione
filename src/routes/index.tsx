@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type TouchEvent } from "react";
-import { ArrowLeft, ArrowRight, ExternalLink, Grid2X2, Maximize, Minimize, PanelLeftClose, PanelLeftOpen, Play, Printer, StickyNote, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink, Grid2X2, Minimize, PanelLeftClose, PanelLeftOpen, Play, Printer, StickyNote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScaledSlide } from "@/components/slides/ScaledSlide";
 import { SlideContent, slides } from "@/components/slides/deck";
 
 export const Route = createFileRoute("/")({
   validateSearch: (search: Record<string, unknown>) => ({
-    slide: Math.min(slides.length, Math.max(1, Number(search.slide) || 1)),
-    print: search.print !== undefined && search.print !== false && search.print !== "false",
+    slide: Math.min(slides.length, Math.max(1, Math.floor(Number(search["slide"]) || 1))),
+    print: search["print"] !== undefined && search["print"] !== false && search["print"] !== "false",
   }),
   head: () => ({ meta: [
     { title: "Aura Rank — Presentazione di Michele Recchia" },
