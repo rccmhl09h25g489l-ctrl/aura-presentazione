@@ -214,7 +214,7 @@
 .slide-table th { text-align: left; font: 21px var(--font-code); color: var(--primary); padding: 20px 24px; border-bottom: 1px solid var(--primary); }
 .slide-table td { padding: 25px 24px; border-bottom: 1px solid var(--border); vertical-align: top; }
 .slide-table td:not(:first-child) { color: var(--muted-foreground); }
-.slide-code { font: 27px/1.55 var(--font-code); background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 32px; white-space: pre-wrap; margin: 0; color: var(--primary); }
+.slide-code { font: 28px/1.42 var(--font-code); background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 30px; white-space: pre-wrap; margin: 0; color: var(--primary); }
 .code-label { color: var(--muted-foreground); font: 20px var(--font-code); margin-bottom: 16px; }
 .project-screenshot { display: block; width: 100%; height: 550px; object-fit: contain; object-position: top; border: 1px solid var(--border); border-radius: 6px; }
 .image-copy { display: grid; grid-template-columns: .7fr 1.3fr; gap: 55px; }
