@@ -27,7 +27,6 @@ export const slides: Slide[] = [
     { title: "Controllo", body: "Vedo il nuovo punteggio, l’ordine e la cronologia." }], note: "Input: persona, punti, motivo → elaborazione: somma dei punti → output: classifica personale aggiornata.", notes: "Mostra le schermate nello stesso ordine. Il programma deve salvare l’evento, recuperare gli eventi personali e ricalcolare i punteggi. Non confondere il punteggio di base con le modifiche del singolo utente." },
   { title: "Ogni tecnologia ha un compito", section: "06 / Tecnologie", kind: "table", headers: ["Tecnologia", "Ruolo nel progetto"], rows: [
     ["React + TypeScript", "Costruiscono le schermate e rendono più chiari i tipi dei dati nel codice."],
-    ["Tailwind CSS", "Definisce colori, spazi e aspetto dell’interfaccia."],
     ["Supabase + SQL", "Gestiscono accessi, tabelle e lettura o salvataggio dei dati."],
     ["API di Supabase", "Collegano i comandi del sito al servizio che conserva i dati."],
     ["Lovable AI, Gemini e Vercel", "Supportano sviluppo e revisione; Vercel pubblica il progetto online."]], notes: "React, TypeScript, Tailwind CSS, Supabase e Vercel sono elencati nella presentazione originale. SQL è il linguaggio del database PostgreSQL usato dal servizio. Le richieste pubbliche osservate leggono people e aura_events. Non presentare Gemini come una funzione AI integrata nel sito: è uno strumento di sviluppo." },
